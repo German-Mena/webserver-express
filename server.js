@@ -4,7 +4,9 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers')
 
+
 const port = process.env.PORT || 3000;
+//Esto lo hago porque no se cual es el puerto que me va a dar heroku
 
 app.use(express.static(__dirname + '/public'))
 
